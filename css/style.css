@@ -87,8 +87,8 @@ ul li{
 
 .container2 {
   max-width: 80%;
-  margin: 30px auto;
-  padding: 40px 0;  
+  margin: 0 auto;
+  padding: 60px 0;  
 }
 
 .header__logo {
@@ -121,6 +121,7 @@ ul {
   
 }
 
+/* -----------------------------------------------------BOTÕES------------------------------------------------------ */
 
 .btn__primary {
   padding: 8px 26px;
@@ -150,6 +151,18 @@ ul {
   box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.15)
 }
 
+.saiba-mais {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-self: center;
+}
+
+
+/* -------------------------------------------------------SOBRE------------------------------------------------ */
+
+
 .text {
   margin-top: 240px;
   margin-left: 10%;
@@ -163,8 +176,16 @@ ul {
   margin-top: 20px;
   margin-right: 20px;
 }
+
+
+/* -------------------------------------------------------SOBRE------------------------------------------------ */
 .sobre {
   max-width: 65%;
+}
+.sobre__box {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sobre__box > p {
@@ -178,10 +199,14 @@ ul {
 .sobre__box > h3 {
   margin:20px 0;
 }
-
-.sobre__box {
-  margin-bottom: 40px;
+.sobre__box > h4 {
+    margin: 20px 0;
 }
+
+
+
+
+
 
 
 .favela-numeros {
@@ -230,11 +255,6 @@ iframe {
   padding-bottom: 56.25%;
 }
 
-/* 4x3 Aspect Ratio */
-.intrinsic-container-4x3 {
-  padding-bottom: 75%;
-}
-
 .intrinsic-container iframe {
   position: absolute;
   top:0;
@@ -243,7 +263,7 @@ iframe {
   height: 100%;
 }
 
-.mapa-interativo h2 {
+.mapa-interativo h3 {
   color:#b4b3b3;
   font-size: 1.5em;
 }
@@ -261,7 +281,7 @@ iframe {
 
 
 
-
+/* ----------------------------------------------      PARCEIROS   ----------------------------------------------- */
 
 
 
@@ -278,7 +298,7 @@ iframe {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;  
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .apoio__icone {
@@ -287,10 +307,38 @@ iframe {
   margin: 0 30px;
 }
 
+.virus-esq {  
+  max-width:18%;
+  max-height:200px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  margin-top: -8%; 
+  z-index:2 ; 
+}
+
+.virus-dir {
+  max-width:12%;
+  max-height:200px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  margin-top: -8%; 
+  z-index:2 ; 
+  
+
+}
+
+
+
 .copyright {
-  background-color: #C4C4C4;
+  background-color: #666;
   padding: 10px;
   text-align: center;
+}
+
+.copyright p {
+  color: #fff;
 }
 
 .icone {
@@ -300,8 +348,12 @@ iframe {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 40px auto 0px auto;
   justify-content: space-around;  
+}
+
+.footer-fundo {
+  background-color:rgb(219, 215, 215) ;
 }
 
 .footer__item h4 {
@@ -309,7 +361,10 @@ iframe {
 }
 
 .nos {
-  max-width: 400px;
+  max-width: 300px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-icons li a{
@@ -358,9 +413,14 @@ iframe {
   }
   
   .container2 {
-    padding: 20px 0;
+    padding: 30px 0;
   }
  
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 130%;
+}
+
   .header__logo {
     max-width: 20%;
   }
@@ -382,6 +442,11 @@ iframe {
     font-size: 28px;
     line-height: 40px;
   }
+
+
+  .sobre__box {
+    text-align: center;
+}
 
   .apoio {
     padding: 0 10px 10px 10px;
@@ -511,6 +576,11 @@ iframe {
     transform: rotate(135deg);
   } */
 
+  .mapa-interativo h3 {
+    color:#b4b3b3;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
   
 
 
@@ -539,6 +609,8 @@ iframe {
   .nos {
     max-width: 300px;
 }
+
+
 
   .footer__item__sobre{
     margin-bottom: 35px;

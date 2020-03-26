@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
+  <!-- Tags responsáveis por gerar miniatura ao compartilhar -->
   <meta property="og:type" content="article" />
   <meta property="og:url" content="http://favelasemcorona.com/" />
   <meta property="og:image" content="http://favelasemcorona.com/img/logotipo_favela-sem-corona.png" />
@@ -15,28 +14,29 @@
   <meta property="og:site_name" content="Favela sem corona" />
   <meta property="fb:admins" content=”100234508295618” />
 
-
-
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Favela sem corona</title>
-
 </head>
 
 <body>
 
   <header class="header">
     <div class="container">
-      <img src="img/logotipo_branco_02.png" alt="logo" class="header__logo">
+      <img src="img/logotipo_branco_02.png" class="header__logo" alt="logo Favela Sem Corona">
+      <!-- <a href="https://www.facebook.com/favelasemcorona/" target="_blank"><img class="header__logo"
+        src="img/logotipo_branco_02.png" alt="logo Favela Sem Corona"></a> -->
+
+
       <span class="mobile-btn"></span>
       <nav class="nav mobile-menu">
         <ul class="menu">
           <li class="menu__item">
-            <a href="#nos" class="menu__item__link">O Que Fazemos</a>
+            <a href="http://favelasemcorona.com/sobre.html" class="menu__item__link">O Que Fazemos</a>
           </li>
           <li class="menu__item">
-            <a href="#apoio" class="menu__item__link">Apoiadores</a>
+            <a href="#apoio" class="menu__item__link">Parceiros</a>
           </li>
           <li class="menu__item">
             <a href="#contato" class="menu__item__link">Contato</a>
@@ -69,28 +69,11 @@
         Corona foi criado com o objetivo de diminuir o impacto da epidemia de coronavírus nas favelas do município,
         atuando nas áreas de prevenção e apoio ao diagnóstico.</p>
 
-      <h3>Frente de atuação</h3>
+        
+      <a href="http://favelasemcorona.com/sobre.html"  class="btn btn__primary saiba-mais">Saiba mais</a>
 
-      <h4>Prevenção</h4>
-      <p> Através das nossas redes sociais, utilizando linguagem informal, simples e objetiva, para mantermos os
-        moradores das favelas informados sobre as ações das entidades e organizações mais próximas. Além disso,
-        utilizamos as
-        mesmas plataformas para alertar a população sobre as fake news. As doações financeiras que recebemos são
-        utilizadas para compra de sabonete, álcool gel, e cestas básicas. Após a compra, entregamos os itens comprados
-        às entidades e organizações que trabalham com as comunidades.</p>
-      <p>Pensando em ampliar o suporte aos moradores das comunidades, criamos um <a
-          href="https://bitly.com/zapfavelasemcorona" target="_blank">whatsapp</a> onde é possível fazer
-        denúncias de violação dos direitos humanos, direitos trabalhista, violência contra a mulher e crimes contra a
-        saúde pública.</p>
-      <p>Em parceria com a <a href="https://bit.ly/bemcare_covidzero" target="_blank">bem.care</a>, encaminhamos pessoas com
-        dificuldade para lidar com o isolamento, ansiedade, medo,
-        tristeza ou solidão por causa do coronavírus.</p>
 
-      <h4>Apoio ao diagnóstico</h4>
-      <p> Para ajudar as organizações de saúde que atuam nas favelas com realização de diagnóstico, o projeto
-        Favela sem Corona em parceria com a importadora <a href="http://www.demilion.com.br/" target="_blank">Demi
-          Lion</a>, compra kits de testes rápidos de COVID-19 e
-        equipamentos de proteção.</p>
+     
     </div>
   </section>
   <!-- <img src="img/corona-esq.png" alt="">
@@ -113,33 +96,26 @@
 
   </section>  -->
 
+
+  <!-- --------------------------         MAPA INTERATIVO      ---------------------------------- -->
+
   <section class="mapa-interativo">
-    <h2>Painel do Rio com Mapa corona</h2>
+    <h3>Painel do Rio com mapa do corona</h3>
     <div class="mapa-container">
 
-      <div class="intrinsic-container intrinsic-container-16x9">
+      <div class="intrinsic-container intrinsic-container-16x9 intrinsic-container-4x3">
         <iframe src="https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4"
           allowfullscreen></iframe>
       </div>
       <p>Fonte:Data Rio</p>
-
-      <!--
-        Tava rolando responsivo, o código acima rola redondo no responsivo
-        
-        <div class="bbc">
-        <iframe src="https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" scrolling="no"
-          frameborder="no"></iframe>
-      </div>
-      <p>O mapa não está carregando? Clique <a href="http://www.data.rio/app/painel-rio-covid-19" target="_blank">aqui</a></p>
-    </div> -->
-
-
+    </div>
   </section>
 
+  <!-- -----------------------------------         APOIO       -------------------------------------- -->
 
   <section class="apoio" id="apoio">
     <div class="container2">
-      <h2>Apoio</h2>
+      <h2>Parceiros</h2>
       <div class="apoiodiv">
         <a href="https://bit.ly/bemcare_covidzero" target="_blank"><img class="apoio__icone" src="img/logo-bemcare.png"
             alt="logo bem.care"></a>
@@ -147,38 +123,46 @@
             alt="logo ribon"></a>
       </div>
   </section>
+  <!-- <img class="virus-esq" src="img/corona-esq.png" alt="">
+   <img class="virus-dir" src="img/corona-dir-01.png" alt=""> -->
 
-  <footer class="container2" id="contato">
-    <h2>Contato</h2>
-    <div class="footer">
+  <!-- ------------------------------             FOOTER            ---------------------------------- -->
 
-      <div class="nos footer__item footer__item__sobre">
-        <p>
-          Temos como objetivo informar e auxiliar na prevenção do coronavírus, e também alertar sobre as perigosas fake
-          news.
-        </p>
+  <footer class="footer-fundo" id="contato">
+    <div class="container2">
+      <h2>Contato</h2>
+      <div class="footer">
+
+        <div class="nos footer__item ">
+          
+           <h4>Fale conosco</h4>
+           <a href="https://bitly.com/zapfavelasemcorona" target="_blank"><img class="icone"
+            src="img/icone-zap.png" alt="Facebook Favela Sem Corona"></a>
+          
+        </div>
+        <div class="footer__item">
+          <h4>Nossas Redes Sociais</h4>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/favelasemcorona/" target="_blank"><img class="icone"
+                  src="img/icone-fb.png" alt="Facebook Favela Sem Corona"></a></li>
+            <li><a href="https://www.instagram.com/favelasemcorona/" target="_blank"><img class="icone"
+                  src="img/icone-ig.png" alt="Instagram Favela Sem Corona"></a></li>
+            <li><a href="https://twitter.com/favelasemcorona" target="_blank"><img class="icone" src="img/icone-tt.png"
+                  alt="Twitter Favela Sem Corona"></a></li>
+          </ul>
+        </div>
+        <img class="logo footer__item_logo" src="img/logotipo_favela-sem-corona.png" alt="logotipo_favela-sem-corona">
       </div>
-      <div class="footer__item">
-        <h4>Nossas Redes Sociais</h4>
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/favelasemcorona/" target="_blank"><img class="icone"
-                src="img/icone-fb.png" alt="Facebook Favela Sem Corona"></a></li>
-          <li><a href="https://www.instagram.com/favelasemcorona/" target="_blank"><img class="icone"
-                src="img/icone-ig.png" alt="Instagram Favela Sem Corona"></a></li>
-          <li><a href="https://twitter.com/favelasemcorona" target="_blank"><img class="icone" src="img/icone-tt.png"
-                alt="Twitter Favela Sem Corona"></a></li>
-        </ul>
-      </div>
-      <img class="logo footer__item_logo" src="img/logotipo_favela-sem-corona.png" alt="logotipo_favela-sem-corona">
-
     </div>
   </footer>
+
+
   <div class="todos2">
     <img src="img/todos.png" alt="">
   </div>
 
   <div class="copyright">
-    <p>Alguns direitos reservados. - Favela Sem Corona 2020.</p>
+    <p>Alguns direitos reservados. Favela Sem Corona 2020.</p>
   </div>
 
 </body>
